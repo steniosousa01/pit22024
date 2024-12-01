@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retirada de Itens</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Link para Material Icons -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Retirada de Itens</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Botão "Voltar para a Página Inicial" -->
+      <a href="index.html">
+        <button class="btn">
+          <span class="material-icons">arrow_back</span>
+          Menu
+        </button>
+      </a>
+
+      <h2>Faça o Pedido de Retirada</h2>
+      
+      <form id="pedido-form">
+        <label for="cliente">Cliente:</label>
+        <select id="cliente" required></select>
+        
+        <h3>Itens do Estoque</h3>
+        <table id="estoque">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Quantidade Disponível</th>
+              <th>Quantidade para Retirar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+        <button type="submit" class="btn">Registrar Pedido</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bar">
+      <p>Stênio Sousa - 2024 - Sistema de Controle de Estoque</p>
+    </div>
+  </footer>
+
+  <script src="JS/pedido.js"></script>
+</body>
+</html>

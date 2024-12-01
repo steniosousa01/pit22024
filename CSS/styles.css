@@ -1,0 +1,142 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Container Principal */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Botões */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  text-decoration: none;  /* Remove o sublinhado dos links dentro dos botões */
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.material-icons {
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+
+/* Remover sublinhado dos links */
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Formatação de Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bar p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .btn {
+      width: 80%;
+      margin-bottom: 10px;
+  }
+}
+
+/* Itens inativos */
+/* Aplica um fundo cinza para itens inativos */
+.inactive-item {
+  background-color: #f8d7da; /* Vermelho claro */
+  color: #721c24; /* Texto vermelho escuro */
+}
+
+/* Estilo para o rótulo "Inativo" */
+.status-label {
+  color: #721c24;
+  font-weight: bold;
+  font-size: 0.9em;
+  background-color: #f8d7da;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+/* Tamanho do imput no estoque */
+.imput-alter {
+  width: 50px;
+}

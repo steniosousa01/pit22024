@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estoque</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Ícones Material -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Controle de Estoque</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <a href="index.html">
+        <button class="btn">
+          <span class="material-icons">arrow_back</span>
+          Menu
+        </button>
+      </a>
+
+      <h2>Adicionar um novo produto:</h2>
+      
+      <form id="product-form">
+        <input type="text" id="product-name" placeholder="Nome do Produto" required>
+        <input type="number" id="product-quantity" placeholder="Quantidade" required min="1">
+        <button type="submit" class="btn">Adicionar Produto</button>
+      </form>
+
+      <h2>Produtos no Estoque:</h2>
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Quantidade Entrada</th>
+            <th>Quantidade Retirada</th>
+            <th>Quantidade Restante</th>
+            <th>Alterar Quantidade</th>
+            <th>Inativar</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os produtos serão listados aqui -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bar">
+      <p>Stênio Sousa - 2024 - Sistema de Controle de Estoque</p>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

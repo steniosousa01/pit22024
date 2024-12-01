@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Clientes</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Ícones Material -->
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Controle de Estoque</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Botão para retornar ao menu -->
+      <a href="index.html">
+        <button class="btn">
+          <span class="material-icons">arrow_back</span>
+          Menu
+        </button>
+      </a>
+
+      <h2>Cadastrar um novo cliente:</h2>
+      
+      <!-- Formulário para cadastro de clientes -->
+      <form id="form-cliente">
+        <div class="form-group">
+          <label for="nome">Nome do Cliente:</label>
+          <input type="text" id="nome" placeholder="Nome completo do cliente" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="tipoPessoa">Tipo de Pessoa:</label>
+          <select id="tipoPessoa" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="true">Pessoa Jurídica</option>
+            <option value="false">Pessoa Física</option>
+          </select>
+        </div>
+        
+        <!-- Campo Documento para Pessoa Jurídica (CNPJ) -->
+        <div class="form-group">
+          <label for="documento">Documento (CNPJ):</label>
+          <input type="text" id="documento" placeholder="Somente números (CNPJ)" maxlength="14" required>
+        </div>
+        
+        <!-- Campo Documento para Pessoa Física (CPF) -->
+        <div class="form-group">
+          <label for="documentop">Documento (CPF):</label>
+          <input type="text" id="documentop" placeholder="Somente números (CPF)" maxlength="11" required>
+        </div>
+        
+        <button type="submit" class="btn">
+          <span class="material-icons">add</span>
+          Cadastrar Cliente
+        </button>
+      </form>
+
+      <h2>Lista de Clientes:</h2>
+      <table id="clientes-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Tipo de Pessoa</th>
+            <th>Documento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Clientes serão carregados aqui -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-bar">
+      <p>Stênio Sousa - 2024 - Sistema de Controle de Estoque</p>
+    </div>
+  </footer>
+
+  <script src="JS/cliente.js"></script>
+
+</body>
+</html>
